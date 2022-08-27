@@ -1,0 +1,33 @@
+.productos {
+    background-color: rgb(241, 240, 225);
+    font-family: "Noto Sans";
+    margin: 0;
+    padding: 0;
+}
+
+.prod-header {
+    height: auto;
+}
+
+.nav-fija {
+    padding: 0;
+}
+.prod-div {
+    font-size: 1em;
+    padding: 0.4em;
+    background-color: rgb(199, 169, 63);
+    color: rgb(241, 240, 225);
+}
+
+#prod-p {
+    margin: 0;
+}
+
+.prod-nav {
+    position: relative;
+    top: 2.2em;
+}
+
+.contenido-nav {
+}
+ 
