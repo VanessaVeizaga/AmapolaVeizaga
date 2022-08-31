@@ -96,8 +96,7 @@ h1 {
 
 h2 {
     color: rgb(199, 169, 63);
-    padding: 0.1em;
-    margin-left: 0.4em;
+    padding: 0.2em 0 0.2em 0.4em;
     font-size: 3vh;
     top: 0.5em;
     border-bottom: 0.05em solid rgb(199, 169, 63);
@@ -144,10 +143,8 @@ footer img {
 
 .mainIndex img {
     border-radius: 100%;
-    height: 20em;
+    height: 17em;
     opacity: 1;
-    position: relative;
-    top: 15%;
     animation-name: index;
     animation-duration: 2s;
     animation-delay: 0.5s;
@@ -156,53 +153,44 @@ footer img {
 
 @keyframes index {
     0% {
-        height: 20em;
-        position: relative;
-        top: 15%;   
+        height: 17em;  
         }
     50% {
-        height: 22em;
-        position: relative;
-        top: 13%;
+        height: 18.7em;
     }
     100% {
-        height: 20em;
-        position: relative;
-        top: 15%;
+        height: 17em;
     }
 }
 
 /*Mujer-Hombre-Accesorios-Sale*/
 
-aside {
+.filtros {
     background-color: rgb(0, 0, 0);
     color: rgb(241, 240, 225); 
-    padding: 0 5px;
+    padding-right: 0;
+    padding-left: 0;
 }
 
-aside .ulPrincipal {
-    padding-left: 0.2em;
+.ulPrincipal {
+    padding-left: 0.3em;
 }
 
-aside .ulPrincipal li {
+.ulPrincipal li {
     list-style: none;
     padding-top: 0.3em;
     font-size: 1em;
     padding-left: 0em;
 }
 
-aside .ulSecundaria {
+.ulSecundaria {
     padding-left: 0.6em;
 }
 
-aside .ulSecundaria li {
+.ulSecundaria li {
     list-style: none;
     padding: 0.2em;
     font-size: 1em;
-}
-
-.div-select {
-    display: flex;
 }
 
 .btn-primary{
@@ -253,6 +241,32 @@ aside .ulSecundaria li {
     text-justify: distribute-all-lines;
 }
 
+
+/*Diseño breakpoint md*/
+
+@media screen and (min-width: 768px) {
+
+    .mainIndex img {
+        height: 27em;
+    }
+    
+    @keyframes index {
+        0% {
+            height: 27em;
+        }
+        50% {
+            height: 30em;         
+        }
+        100% {
+            height: 27em;   
+        }
+    }
+
+    .div-select {
+        display: flex;
+    }
+}
+
 /*Diseño breakpoint lg*/
 
 @media screen and (min-width: 992px) {
@@ -286,6 +300,22 @@ aside .ulSecundaria li {
         color: rgb(0, 0, 0);
         font-size: 4.1vh;
         font-weight: bolder;
+    }
+
+    .mainIndex img {
+        height: 23em;
+    }
+    
+    @keyframes index {
+        0% {
+            height: 23em;
+        }
+        50% {
+            height: 25em;         
+        }
+        100% {
+            height: 23em;   
+        }
     }
 
     h2 {
