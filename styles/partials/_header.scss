@@ -1,0 +1,89 @@
+header {
+    height: auto;
+}
+
+.header-div {
+    font-size: 4vw;
+    background-color: $dorado;
+    color: $crema;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-nav {
+    align-content: flex-start;
+        a {
+            color: $dorado;
+            padding: 1vh;
+        }
+        .Carrito {
+            width: 1.7em;
+            position: relative;
+            bottom: 0.3em;
+         }
+        button {
+            color: $dorado;
+        }
+}
+ 
+.header-logo {
+    display: flex;
+    justify-content: center;
+    .logo {
+        border-radius: 50%;
+        width: 65%;
+        padding: 0.1em;
+        max-width: 160px;
+        position: relative;
+        bottom: 2em;
+    }
+}
+
+h1 {
+    background-color: $dorado;
+    color: $crema;
+    font-size: 5vh;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: titulo;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes titulo {
+    0% {
+        background-color: $dorado;
+    }
+    50% {
+        background-color: $negro;
+    }
+    100% {
+        background-color: $dorado;
+    }
+}
+
+/*Diseño breakpoint lg*/
+
+@media screen and (min-width: 992px) {
+    .header-div {
+        font-size: 2.8vh;
+        padding: 0.8vh;
+    } 
+
+    .header-logo {
+        justify-content: flex-start;
+        padding: 0em;
+        .logo {
+            position: inherit;
+            width: 50%;
+            padding: 0.2em;
+        }
+    }
+
+}

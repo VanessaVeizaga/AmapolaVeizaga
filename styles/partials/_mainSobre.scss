@@ -1,0 +1,32 @@
+.mainSobre div {
+    display: flex;
+    justify-content: center;
+}
+
+.mainSobre img {
+    border-radius: 100%;
+    width: 20em;
+    padding: 1em;
+}
+
+.mainSobre p {
+    padding: 1em;
+    text-justify: distribute-all-lines;
+}
+
+/*Diseño breakpoint lg*/
+
+@media screen and (min-width: 992px) {
+
+    .mainSobre div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .mainSobre img {
+        width: auto;
+        height: 70vh;
+        display: flex;
+        align-self: center;
+    }
+}
