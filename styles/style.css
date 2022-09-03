@@ -30,11 +30,12 @@ header {
   color: rgb(199, 169, 63);
 }
 
-.header-logo {
+.header-logo a {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-self: center;
 }
-.header-logo .logo {
+.header-logo a .logo {
   border-radius: 50%;
   width: 65%;
   padding: 0.1em;
@@ -91,10 +92,12 @@ h1 {
     padding: 0.8vh;
   }
   .header-logo {
-    justify-content: flex-start;
     padding: 0em;
   }
-  .header-logo .logo {
+  .header-logo a {
+    justify-self: flex-start;
+  }
+  .header-logo a .logo {
     position: inherit;
     width: 50%;
     padding: 0.2em;
@@ -310,7 +313,6 @@ h2 {
 
 footer nav {
   background-color: rgb(199, 169, 63);
-  font-size: 2.6vh;
   font-weight: bold;
 }
 footer nav ul {
@@ -323,6 +325,7 @@ footer nav ul li {
 }
 footer nav ul li a {
   color: rgb(241, 240, 225);
+  font-size: 2.6vh;
 }
 
 footer img {
@@ -331,11 +334,11 @@ footer img {
 
 /*Diseño breakpoint lg*/
 @media screen and (min-width: 992px) {
-  footer nav {
-    font-size: 3.8vh;
+  footer nav ul li {
+    padding: 0 3vh;
   }
-  footer li {
-    padding: 0 2em;
+  footer nav ul li a {
+    font-size: 3.8vh;
   }
 }
 /*Reset*/

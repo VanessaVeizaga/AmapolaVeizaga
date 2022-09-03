@@ -15,30 +15,33 @@ header {
 
 .header-nav {
     align-content: flex-start;
-        a {
-            color: $dorado;
-            padding: 1vh;
-        }
-        .Carrito {
-            width: 1.7em;
-            position: relative;
-            bottom: 0.3em;
-         }
-        button {
-            color: $dorado;
-        }
+    a {
+        color: $dorado;
+        padding: 1vh;
+    }
+    .Carrito {
+        width: 1.7em;
+        position: relative;
+        bottom: 0.3em;
+    }
+    button {
+        color: $dorado;
+    }    
 }
  
 .header-logo {
-    display: flex;
-    justify-content: center;
-    .logo {
-        border-radius: 50%;
-        width: 65%;
-        padding: 0.1em;
-        max-width: 160px;
-        position: relative;
-        bottom: 2em;
+    a {
+        width: 100%;
+        display: flex;
+        justify-self: center;
+        .logo {
+            border-radius: 50%;
+            width: 65%;
+            padding: 0.1em;
+            max-width: 160px;
+            position: relative;
+            bottom: 2em;
+        }  
     }
 }
 
@@ -76,13 +79,15 @@ h1 {
         padding: 0.8vh;
     } 
 
-    .header-logo {
-        justify-content: flex-start;
+    .header-logo { 
         padding: 0em;
-        .logo {
-            position: inherit;
-            width: 50%;
-            padding: 0.2em;
+        a {
+            justify-self: flex-start;
+            .logo {
+                position: inherit;
+                width: 50%;
+                padding: 0.2em;
+            }
         }
     }
 

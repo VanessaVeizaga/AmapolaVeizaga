@@ -1,7 +1,6 @@
 footer {
     nav {
         background-color: $dorado;
-        font-size: 2.6vh;
         font-weight: bold;
         ul {
             display: flex;
@@ -11,6 +10,7 @@ footer {
                 padding: 1vh;
                 a {
                     color: $crema;
+                    font-size: 2.6vh;
                 }
             }
         }
@@ -29,13 +29,14 @@ footer {
 
     footer {
         nav {
-            font-size: 3.8vh;
+            ul {
+                li {
+                    padding: 0 3vh;
+                    a {
+                        font-size: 3.8vh;
+                    }
+                }
+            }
         } 
-    }
-
-    footer {
-        li {
-            padding: 0 2em;
-        }
     }
 }
