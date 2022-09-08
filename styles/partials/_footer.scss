@@ -1,7 +1,6 @@
 footer {
     nav {
-        background-color: $dorado;
-        font-weight: bold;
+        background-color: map-get($colors , dorado);
         ul {
             display: flex;
             margin-bottom: 0;
@@ -9,8 +8,9 @@ footer {
                 list-style: none;
                 padding: 1vh;
                 a {
-                    color: $crema;
+                    color: map-get($colors, crema);
                     font-size: 2.6vh;
+                    font-weight: bold;
                 }
             }
         }

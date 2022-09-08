@@ -1,4 +1,4 @@
-@import "./partials/variables/colors", "./partials/header", "./partials/mainInicio", "./partials/mainProductos", "./partials/mainSobre", "./partials/mainContacto", "./partials/footer";
+@import "./partials/maps", "./partials/extends", "./partials/mixins", "./partials/header", "./partials/mainInicio", "./partials/mainProductos", "./partials/mainSobre", "./partials/mainContacto", "./partials/footer";
 
 /*Reset*/
 
@@ -10,8 +10,8 @@
 /*Estilos generales*/
 
 body {
-    background-color: $crema;
-    font-family: "Noto Sans";
+    background-color: map-get($colors, crema);
+    font-family: map-get($fonts , primaryFont);
 }
 
 a {
@@ -20,7 +20,7 @@ a {
     font-size: 2.8vh;
     transition: all 1s;
         &:hover {
-            color: $negro;
+            color: map-get($colors, negro);
             font-size: 3.1vh;
             font-weight: bolder;
         }

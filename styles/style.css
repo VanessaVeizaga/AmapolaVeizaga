@@ -1,25 +1,37 @@
 @charset "UTF-8";
+h1 {
+  font-size: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation-name: titulo;
+          animation-name: titulo;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
 header {
   height: auto;
 }
 
 .header-div {
   font-size: 4vw;
+  padding: 1vw;
   background-color: rgb(199, 169, 63);
   color: rgb(241, 240, 225);
-  padding: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.header-nav {
-  align-content: flex-start;
-}
 .header-nav a {
   color: rgb(199, 169, 63);
-  padding: 1vh;
+  padding: 0.8vh;
 }
 .header-nav .Carrito {
   width: 1.7em;
@@ -33,7 +45,7 @@ header {
 .header-logo a {
   width: 100%;
   display: flex;
-  justify-self: center;
+  justify-content: center;
 }
 .header-logo a .logo {
   border-radius: 50%;
@@ -47,19 +59,7 @@ header {
 h1 {
   background-color: rgb(199, 169, 63);
   color: rgb(241, 240, 225);
-  font-size: 5vh;
   margin-bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-animation-name: titulo;
-          animation-name: titulo;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
 }
 
 @-webkit-keyframes titulo {
@@ -91,15 +91,18 @@ h1 {
     font-size: 2.8vh;
     padding: 0.8vh;
   }
+  .header-nav a {
+    padding: 2vh;
+  }
   .header-logo {
     padding: 0em;
   }
   .header-logo a {
-    justify-self: flex-start;
+    justify-content: flex-start;
   }
   .header-logo a .logo {
     position: inherit;
-    width: 50%;
+    width: 55%;
     padding: 0.2em;
   }
 }
@@ -210,7 +213,6 @@ h2 {
   color: rgb(199, 169, 63);
   padding: 0.2em 0 0.2em 0.4em;
   font-size: 3vh;
-  top: 0.5em;
   border-bottom: 0.05em solid rgb(199, 169, 63);
 }
 
@@ -313,7 +315,6 @@ h2 {
 
 footer nav {
   background-color: rgb(199, 169, 63);
-  font-weight: bold;
 }
 footer nav ul {
   display: flex;
@@ -326,6 +327,7 @@ footer nav ul li {
 footer nav ul li a {
   color: rgb(241, 240, 225);
   font-size: 2.6vh;
+  font-weight: bold;
 }
 
 footer img {
