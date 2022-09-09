@@ -1,23 +1,24 @@
-.mainContacto p {
-    font-size: 2.8vh;
-    font-weight: 600;
-    padding: 1.7vh;
-    text-justify: distribute-all-lines;
-}
+.mainContacto {
+    p {
+        font-size: 2.8vh;
+        font-weight: 600;
+        padding: 1.7vh;
+        text-justify: distribute-all-lines;
+    }
+} 
 
-.mainContacto form {
-    font-weight: 500;
-}
-
-.mainContacto form label {
-    font-size: 2.7vh;
-}
-
-.mainContacto form input{
-    font-size: 2.6vh;
-}
-
-.mainContacto form textarea {
-    font-size: 2.6vh;
+.mainContacto {
+    form {
+        font-weight: 500;
+        label {
+            font-size: 2.7vh;
+        }
+        input{
+            font-size: 2.6vh;
+        }
+        textarea {
+            font-size: 2.6vh;
+        }
+    }
 }
 

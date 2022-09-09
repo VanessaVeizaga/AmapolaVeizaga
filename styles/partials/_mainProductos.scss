@@ -2,7 +2,6 @@ h2 {
     color: $dorado;
     padding: 0.2em 0 0.2em 0.4em;
     font-size: 3vh;
-    top: 0.5em;
     border-bottom: 0.05em solid $dorado;
 }
 
@@ -15,28 +14,37 @@ h2 {
 
 .ulPrincipal {
     padding-left: 0.3em;
-}
-
-.ulPrincipal li {
-    list-style: none;
-    padding-top: 0.3em;
-    font-size: 1em;
-    padding-left: 0em;
+    li {
+        list-style: none;
+        padding-top: 0.3em;
+        font-size: 1em;
+        padding-left: 0em;
+    }
 }
 
 .ulSecundaria {
     padding-left: 0.6em;
-}
-
-.ulSecundaria li {
-    list-style: none;
-    padding: 0.2em;
-    font-size: 1em;
+    li {
+        list-style: none;
+        padding: 0.2em;
+        font-size: 1em;
+    }
 }
 
 .btn-primary{
     background-color: $dorado;
     border: $dorado;
+    &:hover {
+        background-color: $negro;
+    }     
+    &:focus {
+        background-color: $dorado; 
+        box-shadow: none;
+    } 
+    &:active {
+        background-color: $negro;
+        box-shadow: none;
+    }     
 }
 
 /*Diseño breakpoint md*/
