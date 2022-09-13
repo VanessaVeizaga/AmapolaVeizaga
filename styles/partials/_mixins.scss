@@ -1,0 +1,11 @@
+@mixin headerDiv ($fontSize, $padding, $bgColor, $color) {
+    font-size: $fontSize;
+    padding: $padding;
+    background-color: $bgColor;
+    color: $color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+

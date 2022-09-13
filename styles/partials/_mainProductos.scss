@@ -1,13 +1,13 @@
 h2 {
-    color: $dorado;
+    color: map-get($colors, dorado);
     padding: 0.2em 0 0.2em 0.4em;
     font-size: 3vh;
-    border-bottom: 0.05em solid $dorado;
+    border-bottom: 0.05em solid map-get($colors, dorado);
 }
 
 .filtros {
-    background-color: $negro;
-    color: $crema; 
+    background-color: map-get($colors, negro);
+    color: map-get($colors, crema); 
     padding-right: 0;
     padding-left: 0;
 }
