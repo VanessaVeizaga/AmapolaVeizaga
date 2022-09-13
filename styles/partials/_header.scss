@@ -3,7 +3,7 @@ header {
 }
 
 .header-div {
-    @include headerDiv (4vw, 1vw, map-get($colors, dorado), map-get($colors, crema))
+    @include headerDiv (4vw, 1vw, map-get($colors, negro), map-get($colors, crema))
 }
 
 .header-nav {

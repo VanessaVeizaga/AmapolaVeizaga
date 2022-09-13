@@ -32,17 +32,17 @@ h2 {
 }
 
 .btn-primary{
-    background-color: $dorado;
-    border: $dorado;
+    background-color: map-get($colors, dorado);
+    border: map-get($colors, dorado);
     &:hover {
-        background-color: $negro;
+        background-color: map-get($colors, negro);
     }     
     &:focus {
-        background-color: $dorado; 
+        background-color: map-get($colors, dorado); 
         box-shadow: none;
     } 
     &:active {
-        background-color: $negro;
+        background-color: map-get($colors, negro);
         box-shadow: none;
     }     
 }
